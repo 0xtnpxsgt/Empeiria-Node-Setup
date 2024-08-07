@@ -140,7 +140,19 @@ WantedBy=multi-user.target
 EOF
 ```
 
+## Enable the service
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable emped.service
+sudo systemctl start emped.service
+```
+
+
 ## Download Snapshot
+```bash
+#Stop the service
+sudo systemctl stop emped.service
+```
 ```bash
 cp $HOME/.empe-chain/data/priv_validator_state.json $HOME/.empe-chain/priv_validator_state.json.backup
 ```
@@ -170,12 +182,7 @@ fi
 mv $HOME/.empe-chain/priv_validator_state.json.backup $HOME/.empe-chain/data/priv_validator_state.json
 ```
 
-## Enable the service
-```bash
-sudo systemctl daemon-reload
-sudo systemctl enable emped.service
-sudo systemctl start emped.service
-```
+
 ## Check logs
 ```bash
 sudo systemctl restart emped && sudo journalctl -u emped -f --no-hostname -o cat
