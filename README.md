@@ -288,11 +288,30 @@ sudo systemctl status emped
 sudo systemctl status emped
 ```
 
+Port Problem?
 
-
-
-
-
+###  You can replace 111 with anything if you want.
+```bash
+echo "export CUSTOM_PORT="111"" >> $HOME/.bash_profile
+source $HOME/.bash_profile
+```
+```bash
+sed -i.bak -e "s%:1317%:${CUSTOM_PORT}17%g;
+s%:8080%:${CUSTOM_PORT}80%g;
+s%:9090%:${CUSTOM_PORT}90%g;
+s%:9091%:${CUSTOM_PORT}91%g;
+s%:8545%:${CUSTOM_PORT}45%g;
+s%:8546%:${CUSTOM_PORT}46%g;
+s%:6065%:${CUSTOM_PORT}65%g" $HOME/.empe-chain/config/app.toml
+```
+```bash
+sed -i.bak -e "s%:26658%:${CUSTOM_PORT}58%g;
+s%:26657%:${CUSTOM_PORT}57%g;
+s%:6060%:${CUSTOM_PORT}60%g;
+s%:26656%:${CUSTOM_PORT}56%g;
+s%^external_address = \"\"%external_address = \"$(wget -qO- eth0.me):${CUSTOM_PORT}56\"%;
+s%:26660%:${CUSTOM_PORT}60%g" $HOME/.empe-chain/config/config.toml
+```
 
 
 
