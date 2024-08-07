@@ -145,6 +145,8 @@ EOF
 cp $HOME/.empe-chain/data/priv_validator_state.json $HOME/.empe-chain/priv_validator_state.json.backup
 ```
 
+- Check the latest Version here by Date - https://server-5.itrocket.net/testnet/empeiria/
+
 ```bash
 if curl -s --head https://server-5.itrocket.net/testnet/empeiria/empeiria_2024-08-07_865547_snap.tar.lz4 | head -n 1 | grep "200" > /dev/null; then
   echo "Snapshot found, downloading..."
