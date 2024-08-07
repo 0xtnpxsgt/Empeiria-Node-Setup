@@ -189,7 +189,7 @@ emped status 2>&1 | jq .SyncInfo
 
 #### If already Fully Sync - Please Proceed 
 
-## Validator Setup
+## Validator Setup - Fill this with your validator info
 ```bash
 export MONIKER="YOUR_NODE_NAME_HERE"
 export WALLET="YOUR_WALLET_NAME_HERE"
@@ -198,6 +198,10 @@ export WEBSITE="YOUR_WEBSITE_HERE"
 export DISPLAY_PIC="YOUR_KEYBASE_IMAGE_PGP"
 export CONTACT="YOUR_CONTACT"
 ```
+- Display Picture - Create Account here: https://keybase.io/
+<img width="854" alt="Screenshot 1403-05-17 at 8 59 46 PM" src="https://github.com/user-attachments/assets/e9455690-1a3f-4442-a04f-f42623d48e0e">
+
+
 ## Write env to .profile
 ```bash
 echo 'export MONIKER=${MONIKER}' >> ~/.profile
