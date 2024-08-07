@@ -244,10 +244,38 @@ emped tx staking create-validator \
   --from=${WALLET}
 ```
 
+## Self Delegate
+```bash
+emped tx staking delegate $(emped keys show $WALLET --bech val -a) 1000000uempe \
+--from $WALLET \
+--chain-id empe-testnet-2 \
+--gas auto \
+--gas-adjustment 1.5 \
+--fees 20uempe -y
+```
 
+- Check your validator here:
+ https://explorer-testnet.empe.io/validators/your_validator_address
 
+#### Done Congratulation!
 
-
+## Other Commands
+```bash
+#Start 
+sudo systemctl start emped
+```
+```bash
+#Stop 
+sudo systemctl stop emped
+```
+```bash
+#Status
+sudo systemctl status emped
+```
+```bash
+#Status
+sudo systemctl status emped
+```
 
 
 
