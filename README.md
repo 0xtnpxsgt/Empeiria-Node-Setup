@@ -283,10 +283,7 @@ sudo systemctl stop emped
 #Status
 sudo systemctl status emped
 ```
-```bash
-#Status
-sudo systemctl status emped
-```
+
 
 
 
