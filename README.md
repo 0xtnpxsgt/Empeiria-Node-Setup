@@ -248,7 +248,7 @@ source ~/.profile
 ```
 ## Get Testnet EMPE - 
 #### You can obtain testnet tokens to fund your address from official EMPE faucet: https://faucet.cnd.biz.id/
-
+or Join here https://t.me/empevalidators and request token from the admin
 ## You can verify your balance with this command:
 ```bash
 emped query bank balances $(emped keys show $WALLET -a)
