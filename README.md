@@ -272,6 +272,11 @@ emped tx staking delegate $(emped keys show $WALLET --bech val -a) 1000000uempe 
 
 #### Done Congratulation!
 
+#### View Validator Info 
+```bash
+emped q staking validator $(emped keys show "YOUR_WALLET_NAME" --bech val -a)
+```
+
 ## Other Commands
 ```bash
 #Start 
