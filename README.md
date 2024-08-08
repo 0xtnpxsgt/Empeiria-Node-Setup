@@ -264,7 +264,7 @@ emped tx staking delegate $(emped keys show $WALLET --bech val -a) 1000000uempe 
 --chain-id empe-testnet-2 \
 --gas auto \
 --gas-adjustment 1.5 \
---fees 20uempe -y
+--fees 25uempe -y
 ```
 
 - Check your validator here:
